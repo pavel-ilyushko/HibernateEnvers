@@ -4,7 +4,6 @@ import java.io.Serializable;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
-import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
 @Entity
@@ -20,16 +19,16 @@ public class MyB_AUD1 implements Serializable{
 
     private String name;
 
-    @ManyToOne
-    private MyA_AUD1 myA_aud1;
-
-    public MyA_AUD1 getMyA_aud1() {
-        return myA_aud1;
-    }
-
-    public void setMyA_aud1(final MyA_AUD1 myA_aud1) {
-        this.myA_aud1 = myA_aud1;
-    }
+//    @ManyToOne
+//    private MyA_AUD1 myA_aud1;
+//
+//    public MyA_AUD1 getMyA_aud1() {
+//        return myA_aud1;
+//    }
+//
+//    public void setMyA_aud1(final MyA_AUD1 myA_aud1) {
+//        this.myA_aud1 = myA_aud1;
+//    }
 
     public Integer getREV() {
         return REV;
