@@ -8,12 +8,12 @@ import javax.persistence.Table;
 
 import org.hibernate.envers.Audited;
 
-@Entity
-@Table(name = "MyA_AUD")
+//@Entity
+//@Table(name = "MyA_AUD")
 public class MyA_AUD1 implements Serializable{
 
-    @Id
-    @GeneratedValue
+//    @Id
+//    @GeneratedValue
     private Long id;
 
     //@Id

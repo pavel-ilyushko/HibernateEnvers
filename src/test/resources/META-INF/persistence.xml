@@ -5,31 +5,12 @@
 	<persistence-unit name="myPU" transaction-type="RESOURCE_LOCAL">
 		<class>my.simple.envers.MyA</class>
 		<class>my.simple.envers.MyB</class>
-		<class>my.simple.envers.MyA_AUD1</class>
-		<class>my.simple.envers.MyB_AUD1</class>
+		<!--<class>my.simple.envers.MyA_AUD1</class>-->
+		<!--<class>my.simple.envers.MyB_AUD1</class>-->
 
 
 		<properties>
-
-			<!--<property name="hibernate.archive.autodetection" value="class" />-->
-
-			<property name="hibernate.dialect" value="org.hibernate.dialect.H2Dialect" />
-			<property name="hibernate.connection.driver_class" value="org.h2.Driver" />
-			<property name="hibernate.connection.url" value="jdbc:h2:target/h2-1" />
-			<property name="hibernate.connection.user" value="sa" />
-
-			<property name="hibernate.show_sql" value="true"/>
-			<property name="hibernate.flushMode" value="FLUSH_AUTO" />
-			<!--<property name="hibernate.hbm2ddl.auto" value="update" />-->
-			<property name="hibernate.format_sql" value="true"/>
-			<property name="hibernate.hbm2ddl.auto" value="create-drop" />
-
-			<!--<property name="hibernate.dialect" value="org.hibernate.dialect.MySQLDialect" />-->
-			<!--<property name="hibernate.connection.driver_class" value="com.mysql.jdbc.Driver" />-->
-			<!--<property name="hibernate.connection.url" value="jdbc:mysql://localhost:3306/myenvers" />-->
-			<!--<property name="hibernate.connection.user" value="root" />-->
-
-
+			<property name="hibernate.ejb.cfgfile" value="hibernate.cfg.xml"/>
 		</properties>
 	</persistence-unit>
 </persistence>

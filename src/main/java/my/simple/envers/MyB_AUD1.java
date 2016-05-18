@@ -6,12 +6,12 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
-@Entity
-@Table(name = "MyB_AUD")
+//@Entity
+//@Table(name = "MyB_AUD")
 public class MyB_AUD1 implements Serializable{
 
-    @Id
-    @GeneratedValue
+//    @Id
+//    @GeneratedValue
     private Long id;
 
     //@Id
